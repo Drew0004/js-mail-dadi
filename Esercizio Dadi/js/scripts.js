@@ -15,20 +15,28 @@ let cpuDice = document.getElementById('cpu-result');
 let myButton = document.getElementById('dice-button');
 
 myButton.addEventListener('click', function(){
+    
     playerDice = Math.floor(Math.random() * (6 - 1 +1) +1);
     console.log('player '+playerDice);
+    document.getElementById('player-result').innerHTML = playerDice;
+   
     cpuDice = Math.floor(Math.random() * (6 - 1 +1) +1);
     console.log('cpu '+cpuDice);
+    document.getElementById('cpu-result').innerHTML = cpuDice;
 
     if(playerDice == cpuDice){
         console.log('Parità');
+        document.getElementById('match-result').innerHTML = 'Parità';
+
 
     }
     else if (playerDice > cpuDice){
         console.log ("L'utente ha vinto!");
+        document.getElementById('match-result').innerHTML = "L'utente ha vinto!";
     }
 
     else if (playerDice < cpuDice){
         console.log("Il computer ha vinto!");
+        document.getElementById('match-result').innerHTML = "Il computer ha vinto!";
     }
 })
