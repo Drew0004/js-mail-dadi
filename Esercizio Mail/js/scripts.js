@@ -8,7 +8,7 @@ stampa un messaggio appropriato sull'esito del controllo.
 Inserire input che prende il dato dell'utente                 OK
 Creare un array che include le mail che possono accedere      OK
 Fare la verifica SE l'utente con la sua mail può accedere     OK
-Stampare l'esito della verifica in pagina
+Stampare l'esito della verifica in pagina                     OK
 */
 
 const userEmail = document.getElementById('user-email');
@@ -25,7 +25,7 @@ myButton.addEventListener('click', function(){
         document.getElementById('my-result').innerHTML = 'Sei Dentro!';
     }
     else{
-        alert ('Errore non funziona nada');
+        alert ('ENTRA?! Non penso proprio.');
     }
 })
 

@@ -11,7 +11,14 @@
 /* 
     general 
 */
+.w-50{
+    width: 50%;
+}
 
+.fs-sm{
+    font-size: 0.8em;
+
+}
 /* 
     header 
 */
