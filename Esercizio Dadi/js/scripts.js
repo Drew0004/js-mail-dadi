@@ -26,17 +26,17 @@ myButton.addEventListener('click', function(){
 
     if(playerDice == cpuDice){
         console.log('Parità');
-        document.getElementById('match-result').innerHTML = 'Parità';
+        document.getElementById('match-result').innerHTML = 'Risutlato: Parità';
 
 
     }
     else if (playerDice > cpuDice){
         console.log ("L'utente ha vinto!");
-        document.getElementById('match-result').innerHTML = "L'utente ha vinto!";
+        document.getElementById('match-result').innerHTML = "Risutlato: L'utente ha vinto!";
     }
 
     else if (playerDice < cpuDice){
         console.log("Il computer ha vinto!");
-        document.getElementById('match-result').innerHTML = "Il computer ha vinto!";
+        document.getElementById('match-result').innerHTML = "Risutlato: Il computer ha vinto!";
     }
 })
