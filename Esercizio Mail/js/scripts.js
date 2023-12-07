@@ -16,16 +16,21 @@ const myButton = document.getElementById('special-button');
 
 const accessEmails = ["alessiovietri@boolean.com", "mauroformisano@boolean.com", "marcocaggiano@boolean.com"];
 
+let myResult = 'Email non valida'
+
 myButton.addEventListener('click', function(){
     const emailInput = (userEmail.value); 
     console.log("L'utente ha inserito: " + emailInput);
 
-    if ((emailInput == accessEmails[0]) || (emailInput == accessEmails[1]) || (emailInput == accessEmails[2])){
-        console.log('sei dentro');
-        document.getElementById('my-result').innerHTML = 'Sei Dentro!';
-    }
-    else{
-        alert ('ENTRA?! Non penso proprio.');
-    }
+    for (let i = 0; i < accessEmails.length; i++){
+        
+        if (emailInput == accessEmails[i]){
+            console.log('sei dentro');
+            myResult = 'Sei Dentro!';
+
+        }
+    }    
+    
+    document.getElementById('my-result').innerHTML = myResult;
 })
 
